@@ -10,9 +10,6 @@ a {
 
 #flake { color:#ffffff; }
 
-
-
-
 body {
 	background-color: #ccc;	
 }
@@ -53,7 +50,6 @@ body {
 
 @-webkit-keyframes snow {
 0% {background-position: 0 0, 0 0, 0 0;}
- 
  100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
 }
 

@@ -23,14 +23,24 @@
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-    <script src="js/jsnow.js"></script>
+    <script src="js/snowfall.min.jquery.js"></script>
     
     <script>
 	
 		$('#snow-overlay').css('height', $(window).height());
-		if ( !$('html').hasClass('csstransitions') ) {
-			$(document).jSnow();
-		}
+  		if ( $('html').hasClass('csstransitions') ) {
+  			$(document).snowfall({
+          flakeCount : 35,        // number
+          flakeColor : '#ffffff', // string
+          flakeIndex: 999999,     // number
+          minSize : 3,            // number
+          maxSize : 6,            // number
+          minSpeed : 2,           // number
+          maxSpeed : 3,           // number
+          round : true,          // bool
+          shadow : false,         // bool
+        });
+  		}
 		
 	</script>
 </body>
