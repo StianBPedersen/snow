@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+	color: white;
+	font-style: italic;
+}
+
+#flake { color:#ffffff; }
+
+
+
+
+body {
+	background-color: #ccc;	
+}
+
+#snow-overlay {
+	position: absolute;
+	top:0;
+	left: 0;
+	width:100%;
+	z-index: 1000;
+	pointer-events:none;
+}
+
+.cssanimations #snow-overlay {
+	background-image: url('../img/snow.png'), url('../img/snow3.png'), url('../img/snow2.png');
+	-webkit-animation: snow 30s linear infinite;
+	-moz-animation: snow 30s linear infinite;
+	-ms-animation: snow 30s linear infinite;
+	animation: snow 30s linear infinite;	
+}
+
+#container {
+	width: 800px;
+	margin: 200px auto;
+	z-index: 99;
+}
+
+/*Keyframes*/
+@keyframes snow {
+0% {background-position: 0 0, 0 0, 0 0;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-moz-keyframes snow {
+0% {background-position: 0 0, 0 0, 0 0;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-webkit-keyframes snow {
+0% {background-position: 0 0, 0 0, 0 0;}
+ 
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-ms-keyframes snow {
+	0% {background-position: 0 0, 0 0, 0 0;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
