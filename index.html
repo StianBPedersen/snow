@@ -26,10 +26,11 @@
     <script src="js/snowfall.min.jquery.js"></script>
     
     <script>
-	
-		$('#snow-overlay').css('height', $(window).height());
+	    var $snowOverlay = $('#snow-overlay');
+		  $snowOverlay.css('height', $(window).height());
+      
   		if ( $('html').hasClass('csstransitions') ) {
-  			$(document).snowfall({
+  			$snowOverlay.snowfall({
           flakeCount : 35,        // number
           flakeColor : '#ffffff', // string
           flakeIndex: 999999,     // number
